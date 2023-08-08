@@ -1,0 +1,39 @@
+    {% extends 'base.html' %}
+    {% block content %} 
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Rollnumber </th>
+          <th scope="col">Department</th>
+          <th scope="col">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in student %}
+        <tr>
+          <th scope="row">{{ i.name }}</th>
+          <td>{{i.rollno}}</td>
+          <td>{{i.department}}</td>
+          <td>{{i.age}}</td>
+        </tr>
+        {% endfor %}    
+      </tbody>
+    </table>
+    
+    
+{% endblock %}    
+    
+        {% for i in student %}
+      Name :  {{ i.name }}
+      Roll Number : {{i.rollno}}
+      Department: {{i.department}}
+      Age   : {{i.age}}<br><hr>
+    
+        {% endfor %}    
+    
+    
+       
+</body>
+</html>

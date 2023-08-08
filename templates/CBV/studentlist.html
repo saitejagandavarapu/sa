@@ -1,0 +1,10 @@
+
+<h1>Student Database</h1>
+    <h1>Today we are going to discuss on Class Based View -CBV -CRUD operation.(Create, Retrive, Update, Delete)</h1>
+    {% for object in object_list %}
+    Roll.no         : {{ object.id }}
+    Name         : {{ object.name }}
+    Department   :{{ object.department }}
+    Phone Number :{{ object.contact }}
+    Address      :{{ object.address }}
+    {% endfor %}
